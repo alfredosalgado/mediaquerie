@@ -7,7 +7,7 @@
 nav {
   grid-area: nav;
   padding: 10px;
-  background: #071530;
+  background: #0e285c;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -29,12 +29,16 @@ cursor: pointer;
 
 header {
   grid-area: filter;
-  background: grey;
+  background-color: rgba(0, 0, 0, 0.123);
   color:#000000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+label {
+  padding-bottom: 5px;
 }
 
 select {
@@ -45,7 +49,7 @@ select {
 .containermobile {
   grid-area: products;
   display: flex;
-  background-color:rgba(168, 164, 164, 0.973);
+  background-color:rgba(255, 255, 255, 0.973);
   flex-direction: column;
   align-items: center;
 
@@ -68,7 +72,9 @@ margin-bottom: 15px;
 a {border: 1px solid rgba(39, 41, 39, 0.24);
 padding: 5px;
 margin-top: 10px;
-text-decoration: none;}
+text-decoration: none;
+border-radius: 10px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);}
 
 footer{
   grid-area: foot;
@@ -109,13 +115,13 @@ footer{
       "nav products"
       "nav products"
       "foot products";
-      grid-template-columns: 2fr 10fr;
+      grid-template-columns: 3fr 10fr;
       grid-template-rows: 70px 80px calc(100vh - 70px - 80px - 90px) 90px;
   }
   nav {
     grid-area: nav;
     padding: 10px;
-    background: #071530;
+    background: #0e285c;;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -139,7 +145,7 @@ footer{
     .containerdesktop {
       grid-area: products;
   display: flex;
-  background-color:rgba(168, 164, 164, 0.973);
+  background-color:rgba(255, 255, 255, 0.973);
   flex-direction: column;
   align-items: center;
      }
@@ -178,7 +184,7 @@ img {
   aspect-ratio: 1 / 1;
 }
 
-.bottom {
+.button {
   display: flex;
   margin-top: 10px;
   padding: 5px 10px;
