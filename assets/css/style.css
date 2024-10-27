@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 nav {
   grid-area: nav;
   padding: 10px;
-  background: #0e285c;
+  background-color: #0e285c;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -20,11 +19,11 @@ nav {
 }
 
 .itemsdesktop {
-display: none;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-cursor: pointer;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 header {
@@ -52,31 +51,32 @@ select {
   background-color:rgb(255, 255, 255);
   flex-direction: column;
   align-items: center;
-
 }
 
 .boxproduct {
   margin-bottom: auto;
   margin-top: auto;
- width: 80%;
- overflow: scroll;
+  width: 80%;
+  overflow: scroll;
 }
 
 section {
-display: flex;
-gap: 2px;
-margin-top: auto;
-margin-bottom: 15px;
+  display: flex;
+  gap: 2px;
+  margin-top: auto;
+  margin-bottom: 15px;
 }
 
-a {border: 1px solid rgba(39, 41, 39, 0.24);
-padding: 5px;
-margin-top: 10px;
-text-decoration: none;
-border-radius: 10px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);}
+a {
+  border: 1px solid rgba(39, 41, 39, 0.24);
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
-footer{
+footer {
   grid-area: foot;
   display: flex;
   flex-direction: column;
@@ -110,18 +110,18 @@ footer{
 
 @media (min-width: 576px){
   .layout {
-      grid-template-areas:
-      "nav filter"
-      "nav products"
-      "nav products"
-      "foot products";
-      grid-template-columns: 3fr 10fr;
-      grid-template-rows: 70px 80px calc(100vh - 70px - 80px - 90px) 90px;
+    grid-template-areas:
+    "nav filter"
+    "nav products"
+    "nav products"
+    "foot products";
+    grid-template-columns: 3fr 10fr;
+    grid-template-rows: 70px 80px calc(100vh - 70px - 80px - 90px) 90px;
   }
   nav {
     grid-area: nav;
     padding: 10px;
-    background: #0e285c;;
+    background-color: #0e285c;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -139,28 +139,27 @@ footer{
     gap: 10px;
     cursor: pointer;
     }
-    .containermobile {
-      display: none;
+  .containermobile {
+    display: none;
     }
-    .containerdesktop {
-      grid-area: products;
-  display: flex;
-  background-color:rgba(255, 255, 255, 0.973);
-  flex-direction: column;
-  align-items: center;
+  .containerdesktop {
+    grid-area: products;
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.973);
+    flex-direction: column;
+    align-items: center;
      }
-     .boxproduct2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-bottom: auto;
-  margin-top: auto;
- width: 95%;
- gap: 15px;
- padding-top: 15px;
- overflow: scroll;
+  .boxproduct2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 95%;
+    gap: 15px;
+    padding-top: 15px;
+    overflow: scroll;
      }
 }
-
 
 .card {
   display: flex;
