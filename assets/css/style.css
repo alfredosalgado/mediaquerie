@@ -59,8 +59,8 @@ select {
     margin-top: auto;
     width: 80%;
     overflow: scroll;
-    row-gap: 35px;
-    gap: 35px;
+    row-gap: 55px;
+    gap: 55px;
     padding-top: 60px;
 }
 
