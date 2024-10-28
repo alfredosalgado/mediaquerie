@@ -59,8 +59,8 @@ select {
     margin-top: auto;
     width: 80%;
     overflow: scroll;
-    gap: 25px;
-    padding-top: 30px;
+    gap: 35px;
+    padding-top: 50px;
 }
 
 section {
